@@ -64,7 +64,7 @@
                                       <entry key="backgroundColor" value="ffffff" />
                                       <entry key="backgroundImage" value="$USER_HOME$/Plocha/icon.png" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/icon.png" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/app/src/main/res/drawable/icon.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />
                                       <entry key="outputName" value="app_icon" />
                                     </map>
