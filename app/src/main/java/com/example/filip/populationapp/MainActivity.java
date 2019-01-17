@@ -1,10 +1,9 @@
 package com.example.filip.populationapp;
 
-import android.app.VoiceInteractor;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,9 +13,9 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
-import org.json.JSONObject;
-
 import java.io.IOException;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, SearchByCountryActivity.class);
+        //EditText editText = (EditText) findViewById();
+        //String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, "Ahoj");
+        startActivity(intent);
+    }
+
 }
